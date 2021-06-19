@@ -1,0 +1,95 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(/image/background.png);
+  background-color: white;
+}
+
+.circle {
+  position: absolute;
+  border-radius: 60%;
+  border: 5px solid green;
+  background: red;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inner {
+  position: relative;
+  background: url("/image/clock.png") no-repeat;
+  background-size: cover;
+  background-color: aliceblue;
+
+  height: 400px;
+  width: 400px;
+  border-radius: 50%;
+  display: inline-block;
+  padding: 17px;
+}
+.sec {
+  position: relative;
+  height: 150px;
+  width: 5px;
+  left: 190px;
+  top: 50px;
+  background: black;
+  transform-origin: bottom;
+
+  animation: sec_rotate 60s linear infinite;
+}
+
+.min {
+  position: relative;
+  height: 130px;
+  width: 8px;
+  left: 190px;
+  top: -80px;
+
+  background: black;
+  transform-origin: bottom;
+  transform: rotate(0deg);
+  animation: min_rotate 3600s linear infinite;
+}
+.hour {
+  position: relative;
+  height: 110px;
+  width: 12px;
+  left: 190px;
+  top: -190px;
+
+  background: black;
+  transform-origin: bottom;
+  transform: rotate(0deg);
+  animation: hour_rotate 216000s linear infinite;
+}
+
+@keyframes sec_rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes min_rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes hour_rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
