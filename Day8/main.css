@@ -15,7 +15,7 @@
 }
 .pixel.boxclicked {
   background-color: white;
-  border: 1px solid white;
+  border: 1px solid black;
   transition: 0.4sec;
 }
 #parent {
@@ -27,7 +27,8 @@
 button {
   width: 80px;
   height: 50px;
-  background-color: violet;
+  background-color: rgb(102, 255, 153);
   text-align: center;
   color: #de4738;
+  border-radius: 50%;
 }
