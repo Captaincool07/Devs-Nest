@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.pixel {
+  width: 20px;
+  height: 20px;
+  background-color: #de4738;
+  border: 1px solid grey;
+  display: inline-block;
+}
+.pixel:hover {
+  opacity: 0.7;
+}
+.pixel.boxclicked {
+  background-color: white;
+  border: 1px solid white;
+  transition: 0.4sec;
+}
+#parent {
+  width: 400px;
+  height: 400px;
+  line-height: 0;
+  border-width: 1px;
+}
+button {
+  width: 80px;
+  height: 50px;
+  background-color: violet;
+  text-align: center;
+  color: #de4738;
+}
