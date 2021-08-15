@@ -1,0 +1,37 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  .container {
+    border: 15px double black;
+    margin-top: 100px;
+    width: 270px;
+    height: 270px;
+    line-height: 0;
+  }
+  .App {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .head {
+    font-size: 5rem;
+  }
+  .white {
+    background-color: white;
+  }
+  .black {
+    background-color: black;
+  }
+  .Cell {
+    border: 1px solid black;
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+    transition: ease-in 0.2s;
+  }
+  
+  .cell:hover {
+    transform: scale(1.1);
+  }
